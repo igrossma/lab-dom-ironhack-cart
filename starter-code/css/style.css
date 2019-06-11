@@ -2,8 +2,13 @@ input {
   border: solid 1px black;
 }
 
+h1 {
+  text-align: center;
+}
+
 .btn {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
@@ -20,11 +25,17 @@ input {
   -ms-user-select: none;
   user-select: none;
   background-image: none;
-  border: 1px solid transparent;
+  border: 1px solid green;
   border-radius: 4px;
 }
 
+.btn div {
+  display: flex;
+  flex-grow: 1;
+}
+
 .btn-success {
+    
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
